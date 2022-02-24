@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-grow: inherit;
+
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  *{
+    width: 100%;
+  }
+}
+body{
+  background-color: rgba(16, 73, 73, 0.247);
+  margin: 0;
+  font-family: monospace;
+}
+::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(10, 10, 10);        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(229, 229, 236);    /* color of the scroll thumb */
+  border-radius:50px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(8, 8, 8);  /* creates padding around scroll thumb */
+}
+
+/* new nav */
+.tophead{
+float: left;
+margin: 0 auto;
+
+
+}
+.topnav{
+background-color: aqua;
+margin: 0 auto;
+padding: 15px;
+height: 80px;
+border-radius: 5px;
+
+}
+.link{
+
+background-color: rgb(72, 155, 155);
+font-family:monospace;
+font-size: larger;
+text-decoration: none;
+color: #f2f2f2;
+transition: all;
+transition-property: all;
+;
+border-style: solid; 
+border-color: #f2f2f2;
+border-width: 1px;
+padding: 10px;
+margin: 5px;
+float: right;
+
+}
+.link:hover{
+
+background-image: linear-gradient(to right, rgba(58, 64, 83, 0.26), rgba(2, 58, 110, 0.856));
+cursor: pointer;
+color: black;
+box-shadow: 2px 2px 2px #070707;
+transition-delay: .2s;
+border-style:groove;
+border-color: #070707;
+border-width: 1px;
+
+}
+
+
+  
+.cinfo{
+  font-size: x-large;
+  display: block;
+  width: 1000px;
+  float: right;
+  height:2000px;
+  background-color: rgba(140, 192, 72, 0.363);
+  margin: 50px;
+  padding: 10px;
+}
+.cinfo1{
+  padding: 20px;
+  text-align: center;
+  margin-left: 15px;
+}
+.cf{
+  float: left;
+  background-color: rgb(14, 105, 105);
+  padding: 10px;
+}
+
+/* side nav  */
+.overlay {
+  margin: 60px;
+  margin-left: 0;
+  height: 2000px;
+  width: 5px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: rgb(87, 70, 70);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  margin-top: 30px;
+  float: left;
+  color: #f2f2f2;
+}
+
+.overlay a {
+
+  display: block;
+  background-color: rgb(72, 155, 155);
+  font-family:monospace;
+  font-size:large;
+  text-decoration: none;
+  color: #1f0404;
+  transition: all;
+  transition-property: all;
+  transition-duration: .1s;
+  border-style: solid; 
+  border-color: #f2f2f2;
+  border-width: 1px;
+  padding: 5px;
+  margin: 7px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  background-image: linear-gradient(to right, rgba(58, 64, 83, 0.26), rgba(2, 58, 110, 0.856));
+  cursor: pointer;
+  color: black;
+  box-shadow: 2px 2px 2px #070707;
+  transition-delay: .1s;
+  border-style:groove;
+  border-color: #070707;
+  border-width: 1px;
+}
+
+.overlay  {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+   /* {
+  font-size: 20px;
+  top: 15px;
+  left: 0px;
+  } */
+}
+
+
+.sidenavdiv{
+  float: left;
+  display: block;
+  left: 0;
+  background-color: rgb(72, 155, 155);
+  color: #695d5d;
+
+}
+
+.closebtn{
+  top: 0;
+  position: absolute;
+  right: 0;
+  font-size: 10px;
+}
+.open{
+  float: left;
+  left: 0;
+  position: absolute;
+  background-color: rgba(15, 27, 23, 0.596);
+  margin: 0 auto;
+  padding: 5px;
+  color: #f2f2f2;
+  
+  
+}

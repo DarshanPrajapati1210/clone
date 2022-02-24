@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-grow: inherit;
+
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  *{
+    width: 100%;
+  }
+}
+body{
+  background-color: rgba(16, 73, 73, 0.247);
+  margin: 0;
+  font-family: monospace;
+}
+::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(10, 10, 10);        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(229, 229, 236);    /* color of the scroll thumb */
+  border-radius:50px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(8, 8, 8);  /* creates padding around scroll thumb */
+}
+
+/* new nav */
+/* new nav */
+.tophead{
+  float: left;
+  margin: 0 auto;
+  
+  
+  }
+  
+  .topnav{
+  background-color: aqua;
+  margin: 0 auto;
+  padding: 15px;
+  height: 80px;
+  border-radius: 5px;
+  }
+  .link{
+  
+  background-color: rgb(72, 155, 155);
+  font-family:monospace;
+  font-size: larger;
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: all;
+  transition-property: all;
+  transition-duration: .1s;
+  border-style: solid; 
+  border-color: #f2f2f2;
+  border-width: 1px;
+  padding: 10px;
+  margin: 5px;
+  float: right;
+  
+  }
+  .link:hover{
+  
+  background-image: linear-gradient(to right, rgba(58, 64, 83, 0.26), rgba(2, 58, 110, 0.856));
+  cursor: pointer;
+  color: black;
+  box-shadow: 2px 2px 2px #070707;
+  transition-delay: .1s;
+  border-style:groove;
+  border-color: #070707;
+  border-width: 1px;
+  
+  }
+  
+
+  
